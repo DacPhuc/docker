@@ -30,7 +30,7 @@ const Admin: React.FC<{}> = () => {
           }}
         />
         <Typography.Title level={2} style={{ textAlign: 'center' }}>
-          <SmileTwoTone /> Dac Phuc <HeartTwoTone twoToneColor="#eb2f96" /> You
+          <SmileTwoTone /> Dac Phuc Nguyen <HeartTwoTone twoToneColor="#eb2f96" /> You
         </Typography.Title>
         <Typography.Title level={2} style={{ textAlign: 'center' }}>
           {mess}
