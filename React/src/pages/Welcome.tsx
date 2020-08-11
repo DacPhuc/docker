@@ -1,7 +1,7 @@
-import React from "react";
-import { PageContainer } from "@ant-design/pro-layout";
-import { Card, Alert, Typography } from "antd";
-import styles from "./Welcome.less";
+import React from 'react';
+import { PageContainer } from '@ant-design/pro-layout';
+import { Card, Alert, Typography } from 'antd';
+import styles from './Welcome.less';
 
 const CodePreview: React.FC<{}> = ({ children }) => (
   <pre className={styles.pre}>
@@ -25,28 +25,20 @@ export default (): React.ReactNode => (
         }}
       />
       <Typography.Text strong>
-        高级表格{" "}
-        <a
-          href="https://protable.ant.design/"
-          rel="noopener noreferrer"
-          target="__blank"
-        >
+        高级表格{' '}
+        <a href="https://protable.ant.design/" rel="noopener noreferrer" target="__blank">
           欢迎使用
         </a>
       </Typography.Text>
-      <CodePreview>Hello World</CodePreview>
+      <CodePreview>Hello</CodePreview>
       <Typography.Text
         strong
         style={{
           marginBottom: 12,
         }}
       >
-        高级布局{" "}
-        <a
-          href="https://prolayout.ant.design/"
-          rel="noopener noreferrer"
-          target="__blank"
-        >
+        高级布局{' '}
+        <a href="https://prolayout.ant.design/" rel="noopener noreferrer" target="__blank">
           欢迎使用
         </a>
       </Typography.Text>
