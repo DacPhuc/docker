@@ -136,6 +136,8 @@ export default function Dashboard() {
   };
 
   React.useEffect(() => {
+    console.log(process.env.REACT_APP_NODE_IP);
+    console.log("hello world");
     fetchData();
   }, []);
 

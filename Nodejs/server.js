@@ -12,7 +12,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/api/index", (req, res) => {
   const text = process.env.DAPU;
   res.status(200);
-  let result = { result: "Hello this data is send from espress server" };
+  let result = {
+    result: "Hello this data is send from espress server he",
+  };
   res.send(JSON.stringify(result));
 });
 

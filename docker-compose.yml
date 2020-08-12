@@ -1,6 +1,7 @@
 version: "3"
 services:
   backend:
+    stdin_open: true
     build:
       context: Nodejs/
     volumes:
@@ -10,11 +11,14 @@ services:
     environment:
       DAPU: "Hello"
   frontend:
+    stdin_open: true
     build:
-      context: React/
-      args:
-        - REACT_APP_HOST_IP= "Hello Dac Phuc"
+      context: frontend/
     volumes:
-      - ./React/:/app
+      - ./frontend/:/usr/src/app
     ports:
-      - "8000:8000"
+      - "3000:3000"
+    links:
+      - backend
+    environment:
+      REACT_APP_NODE_IP: backend
